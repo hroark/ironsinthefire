@@ -1,0 +1,124 @@
+
+body { 
+  background: url(./Images/img.jpg) center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.center {
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 22px;
+}
+
+
+
+.navbar a {
+
+  font-size: 28px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn,
+
+
+div.container4 p {
+  margin: 0;
+  background: rgb(255, 145, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.pHeader{
+  font-size: 40px;
+  color: rgb(255, 145, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;  
+}
+
+.logo {
+  text-align: center;
+  overflow: hidden;
+  display: inline-block;
+  position: fixed; 
+  top: 0;
+}
+
+.logo2 {
+  text-align: center;
+  overflow: hidden;
+  display: inline-block;
+  position: fixed; 
+  top: 50px
+}
+
+.logo3 {
+  text-align: center;
+  overflow: hidden;
+  display: inline-block;
+  position: fixed; 
+  top: 100px
+}
+
+.logo4 {
+  text-align: center;
+  overflow: hidden;
+  display: inline-block;
+  position: fixed; 
+  top: 150px
+}
+.container_row{
+  display: grid;
+}
+
+.layer1, .layer2{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.layer1 span{
+  color: #fff;
+  background: #000cf6;
+}
+
+.layer2{
+  background: rgba(255, 0, 0, 0.4);
+}
+ul.no-bullets {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+ul.no-bullets {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.a {
+  font-size:36px;
+}
