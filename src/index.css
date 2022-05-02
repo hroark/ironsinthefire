@@ -49,37 +49,6 @@ div.container4 p {
   text-decoration: none;  
 }
 
-.logo {
-  text-align: center;
-  overflow: hidden;
-  display: inline-block;
-  position: fixed; 
-  top: 0;
-}
-
-.logo2 {
-  text-align: center;
-  overflow: hidden;
-  display: inline-block;
-  position: fixed; 
-  top: 50px
-}
-
-.logo3 {
-  text-align: center;
-  overflow: hidden;
-  display: inline-block;
-  position: fixed; 
-  top: 100px
-}
-
-.logo4 {
-  text-align: center;
-  overflow: hidden;
-  display: inline-block;
-  position: fixed; 
-  top: 150px
-}
 .container_row{
   display: grid;
 }
@@ -103,14 +72,8 @@ ul.no-bullets {
   margin: 0; 
 }
 
-ul.no-bullets {
-  list-style-type: none; 
-  padding: 0; 
-  margin: 0; 
-}
 .column {
-  float: left;
-  width: 50%;
+  text-align: center;
 }
 
 .row:after {
@@ -118,7 +81,52 @@ ul.no-bullets {
   display: table;
   clear: both;
 }
-
-div.a {
-  font-size:36px;
+.ResBox {
+    margin: auto;
+    width: 60%;
+    border: 3px solid white;
+    padding: 10px;
+  
 }
+
+.label {
+  Color: white
+}
+
+.wrapper {
+  padding: 5px 20px;
+}
+
+.wrapper fieldset {
+  margin: 20px 0;
+}
+.FormLabels{
+  color: white
+}
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+label, input {
+  display: inline-block;
+}
+
+label {
+  width: 30%;
+  text-align: right;
+}
+
+label + input {
+  width: 30%;
+  margin: 0 30% 0 4%;
+}
+
+input + input {
+  float: left;
+}
+.textarea {
+    width: 80%;
+    margin: 0 10% 0 4%;
+    float:center;
+  }
