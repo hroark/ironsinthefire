@@ -1,7 +1,8 @@
 
-
+import { send } from 'emailjs-com';
 import H from "./Header.js";
 import V from "./Videos";
+import B from "./contact"
 import React from "react";
 import "./index.css";
 let logo = require("./Images/Me.png");
@@ -108,9 +109,8 @@ function Display() {
         <br />
         <br />
         <br />
-
-      </>
-    </>
-  );
-}
-export default Display;
+        <p>
+        <F />
+        </p>
+        
+export default Display;}

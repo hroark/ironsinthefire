@@ -128,5 +128,11 @@ input + input {
 .textarea {
     width: 80%;
     margin: 0 10% 0 4%;
+    float:right;
+  }
+
+  button{
+    width: 20%;
     float:center;
+    margin: 0 20% 0 40%;
   }
