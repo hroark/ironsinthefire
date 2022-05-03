@@ -1,8 +1,8 @@
-
+import {useState} from 'react'
 import { send } from 'emailjs-com';
 import H from "./Header.js";
 import V from "./Videos";
-import B from "./contact"
+import B from "./Contact"
 import React from "react";
 import "./index.css";
 let logo = require("./Images/Me.png");
@@ -13,8 +13,6 @@ function Display() {
     alert('You have submitted the form.')
   }
   return (
-
-    
     <>
       <>
 
@@ -109,8 +107,10 @@ function Display() {
         <br />
         <br />
         <br />
-        <p>
-        <F />
-        </p>
-        
-export default Display;}
+
+        <B />
+</>
+</>
+  );
+}
+export default Display;
