@@ -1,74 +1,43 @@
-import { useState } from 'react';
-import { send } from 'emailjs-com';
-
-function Contact() {
-  const [send, setToSend] = useState({
-    from_name: '',
-    to_name: '',
-    message: '',
-    reply_to: '',
-  });
-  
-  
-  const onSubmit = (e) => {
-    e.preventDefault()};
-    send(
-      'service_7n9eyad',
-      'template_qxxc3jo',
-      send,
-      'rigamonk@gmail.com'
-    )
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-      })
-      .catch((err) => {
-          console.log('FAILED...', err);
-        });
-  
-  
-        const handleChange = (e) => {
-          setToSend({ ...send, [e.target.name]: e.target.value });
-        };
+import "./index.css";
+import React from 'react';
+import  { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { toHaveFocus } from "@testing-library/jest-dom/dist/matchers";
 
 
+  export const ContactUs = () => {
+    const form = useRef();
 
-const Message =() =>{
-const [send, setToSend] = useState({
-  from_name: '',
-  to_name: '',
-  message: '',
-  reply_to: '',
-});
-return (
-      <div>
-        <div align="center">
-        <form onSubmit={onSubmit}>
-<input
-  type='text'
-  name='from_name'
-  placeholder='from name'
-  value={send.from_name}
-  onChange={handleChange}
-/>
-<input
-  type='text'
-  name='message'
-  placeholder='Your message'
-  value={send.message}
-  onChange={handleChange}
-/>
-<input
-  type='text'
-  name='email'
-  placeholder='Your email'
-  value={send.reply_to}
-  onChange={handleChange}
-/>
-<button type='submit'>Submit</button>
-</form>
-        </div>
+    const sendEmail = (e) => {
+      e.preventDefault();
+      emailjs.sendForm('service_16ydpkm', 'template_qxxc3jo', form.current, '-IYo-pn6QjBeNYf7T')
+     .then(function(response) {
+        alert("Thank you!!!");
+       e.target.reset();
+     }, function(error) {
+        console.log('FAILED...', error);
+     });
+    };
+  
+
+//  render() {
+    return (
+      
+      <form ref={form} onSubmit={sendEmail}>
+      <label for="name" className = "FormLabels center">Name</label>
+      <input className = "center" name="name" type="text" required placeholder="John Doe"/>
+
+      <label for="email" className = "FormLabels center">Email</label>
+      <input className = "center" name="email" type="email" required placeholder="you@domain.com"/>
+
+      <label for="message" className = "FormLabels center">Message</label>
+      <textarea className = "center" name="message" cols="55" rows="10" placeholder="Enter your message here ..." required> </textarea>
+      <div class="center">
+        <br />
+        <input type="submit" className="btn btn-primary mr-1" value="Submit"/>
       </div>
-);
-}
-}
-export default Contact;
+    </form>	
+    );
+  }
+//}
+export default ContactUs;

@@ -3,10 +3,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import ReactDOM from 'react-dom';
 import H from "././App"
 import V from "./Videos"
-import B from "./Contact"
+//import { send } from 'emailjs-com';
 
 ReactDOM.render( V, document.getElementById('next'));
 ReactDOM.render( <H />, document.getElementById('root'));
-ReactDOM.render( <B/>, document.getElementById('form'));
-
 

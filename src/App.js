@@ -1,5 +1,4 @@
-import {useState} from 'react'
-import { send } from 'emailjs-com';
+
 import H from "./Header.js";
 import V from "./Videos";
 import B from "./Contact"
@@ -8,10 +7,10 @@ import "./index.css";
 let logo = require("./Images/Me.png");
 
 function Display() {
-  const handleSubmit = event => {
+/*  const handleSubmit = event => {
     event.preventDefault();
     alert('You have submitted the form.')
-  }
+  }*/
   return (
     <>
       <>
@@ -40,8 +39,7 @@ function Display() {
           <br />
           <br />
           <br />
-          <h2><a href="mailto:patrick@ironsinthefire.dev">Email Me</a></h2>
-          <br />
+                    <br />
           <p className="center .sticky + .content" style={{ color: "white" }}>
             <br />
             <img src={logo} Alt="Logo" />
@@ -88,8 +86,7 @@ function Display() {
           </div>
         </div>
 
-        <br />
-        <br />
+
         <br />
         <br />
         <br />
@@ -103,12 +100,19 @@ function Display() {
               Patrick Porter Resume
             </a>
           </strong>
+          </div>
+          <div>
+            <br />
+            <h1 className="FormLabels center"> Drop a line!</h1>
+          
+            <br />
+          <B />
         </div>
         <br />
         <br />
         <br />
+      
 
-        <B />
 </>
 </>
   );
