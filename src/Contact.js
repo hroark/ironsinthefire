@@ -2,7 +2,6 @@ import "./index.css";
 import React from 'react';
 import  { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { toHaveFocus } from "@testing-library/jest-dom/dist/matchers";
 
 
   export const ContactUs = () => {
