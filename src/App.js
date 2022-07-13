@@ -5,6 +5,7 @@ import B from "./Contact"
 import React from "react";
 import "./index.css";
 let logo = require("./Images/Me.png");
+let sw = require("./Images/pioneersoftwash.png");
 
 function Display() {
 /*  const handleSubmit = event => {
@@ -106,7 +107,10 @@ function Display() {
         <br />
         <br />
         <br />
-      
+        <p className="center .sticky + .content" style={{ color: "white" }}>
+            <br />
+            <img src={sw} Alt="Logo" />
+          </p>
 
 </>
 </>
