@@ -22,17 +22,12 @@ function Display() {
         <p className="center .sticky + .content" style={{ color: "white" }}>
           Welcome to my website. I have done very little
           <br />
-          front-end programming before, and this is a site that serves a dual
-          purpose:
-          <br />
-          first, to give me an interesting environment for learning
-          <br />
-          Web-Programming and to give a kind of portfolio describing my
-          <br />
-          professional life. I wanted to learn ReactJS (No particular reason) so
+          front-end programming before, and this is a site that serves As a platform where I can learn and practice.
+          <br></br>
+          I wanted to learn ReactJS (No particular reason) so
           <br />
           thats the front-end library I am using. I imagine I will write things
-          using other frameworks.
+          using other frameworks in the future.
         </p>
 
         <div align="center">
@@ -91,7 +86,7 @@ function Display() {
         <br />
         <br />
 
-        <div class="container_row a center ResBox">
+        {/* <div class="container_row a center ResBox">
           <strong>
             <a
               href="Patrick R Porter Resume.doc"
@@ -100,7 +95,7 @@ function Display() {
               Patrick Porter Resume
             </a>
           </strong>
-          </div>
+          </div> */}
           <div>
             <br />
             <h1 className="FormLabels center"> Drop a line!</h1>
